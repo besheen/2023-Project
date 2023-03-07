@@ -9,7 +9,7 @@ RACSignal（信号类），只是表示当数据变化时，信号内部会发�
 使用步骤：
 
 1、创建信号
-
+sdasd
 ```objective-c
 + (RACSignal *)createSignal:(RACDisposable * (^)(id<RACSubscriber> subscriber))didSubscribe
 ```
