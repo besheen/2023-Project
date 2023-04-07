@@ -15,6 +15,19 @@
 		07B03F4C29930A4D00A4CAE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B03F4A29930A4D00A4CAE0 /* LaunchScreen.storyboard */; };
 		07B03F4F29930A4D00A4CAE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B03F4E29930A4D00A4CAE0 /* main.m */; };
 		BB7E586721C3B07F20DC4DD2 /* Pods_RAC_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3628F01B27938049BD4FEB /* Pods_RAC_MVVM.framework */; };
+		C0852CD029D1825B0093AF4A /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0852CCF29D1825B0093AF4A /* LoginViewModel.m */; };
+		C08FCCAA29C463CB000892BD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08FCCA929C463CB000892BD /* BaseViewController.m */; };
+		C08FCCAD29C463DF000892BD /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C08FCCAC29C463DF000892BD /* BaseView.m */; };
+		C08FCCB029C46401000892BD /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C08FCCAF29C46401000892BD /* BaseViewModel.m */; };
+		C0BE8AF129D29AA400E3C4E8 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8AF029D29AA400E3C4E8 /* NSString+Common.m */; };
+		C0BE8AF429D2BCFE00E3C4E8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8AF329D2BCFE00E3C4E8 /* LoginViewController.m */; };
+		C0BEBD6629DABD520004A99A /* LoginInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BEBD6529DABD520004A99A /* LoginInputView.m */; };
+		C0BEBD6E29DFCA330004A99A /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BEBD6D29DFCA330004A99A /* ListViewController.m */; };
+		C0BEBD7129DFEBDE0004A99A /* ListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BEBD7029DFEBDE0004A99A /* ListHeaderView.m */; };
+		C0BEBD7429DFED470004A99A /* ListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BEBD7329DFED470004A99A /* ListViewModel.m */; };
+		C0BEBD7729DFEE8F0004A99A /* ListTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BEBD7629DFEE8F0004A99A /* ListTableCell.m */; };
+		C0BEBD7A29DFEF230004A99A /* ListHeaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BEBD7929DFEF230004A99A /* ListHeaderViewModel.m */; };
+		C0BEBD7D29DFF2240004A99A /* ListCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BEBD7C29DFF2240004A99A /* ListCellViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +45,36 @@
 		07B03F4E29930A4D00A4CAE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C2FB36387C6ACEED35DFAD6 /* Pods-RAC+MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC+MVVM.release.xcconfig"; path = "Target Support Files/Pods-RAC+MVVM/Pods-RAC+MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		7C3628F01B27938049BD4FEB /* Pods_RAC_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAC_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0852CCE29D1825B0093AF4A /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		C0852CCF29D1825B0093AF4A /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		C08FCCA829C463CB000892BD /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C08FCCA929C463CB000892BD /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		C08FCCAB29C463DF000892BD /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		C08FCCAC29C463DF000892BD /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		C08FCCAE29C46401000892BD /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		C08FCCAF29C46401000892BD /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		C08FCCB129C46432000892BD /* ViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewProtocol.h; sourceTree = "<group>"; };
+		C08FCCB229C4644C000892BD /* ViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerProtocol.h; sourceTree = "<group>"; };
+		C08FCCB329C4645F000892BD /* ViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelProtocol.h; sourceTree = "<group>"; };
+		C0BE8AED29D2938700E3C4E8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C0BE8AEF29D29AA400E3C4E8 /* NSString+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		C0BE8AF029D29AA400E3C4E8 /* NSString+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
+		C0BE8AF229D2BCFE00E3C4E8 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C0BE8AF329D2BCFE00E3C4E8 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C0BEBD6429DABD520004A99A /* LoginInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginInputView.h; sourceTree = "<group>"; };
+		C0BEBD6529DABD520004A99A /* LoginInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginInputView.m; sourceTree = "<group>"; };
+		C0BEBD6C29DFCA330004A99A /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		C0BEBD6D29DFCA330004A99A /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		C0BEBD6F29DFEBDE0004A99A /* ListHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListHeaderView.h; sourceTree = "<group>"; };
+		C0BEBD7029DFEBDE0004A99A /* ListHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListHeaderView.m; sourceTree = "<group>"; };
+		C0BEBD7229DFED470004A99A /* ListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewModel.h; sourceTree = "<group>"; };
+		C0BEBD7329DFED470004A99A /* ListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewModel.m; sourceTree = "<group>"; };
+		C0BEBD7529DFEE8F0004A99A /* ListTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableCell.h; sourceTree = "<group>"; };
+		C0BEBD7629DFEE8F0004A99A /* ListTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableCell.m; sourceTree = "<group>"; };
+		C0BEBD7829DFEF230004A99A /* ListHeaderViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListHeaderViewModel.h; sourceTree = "<group>"; };
+		C0BEBD7929DFEF230004A99A /* ListHeaderViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListHeaderViewModel.m; sourceTree = "<group>"; };
+		C0BEBD7B29DFF2240004A99A /* ListCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListCellViewModel.h; sourceTree = "<group>"; };
+		C0BEBD7C29DFF2240004A99A /* ListCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListCellViewModel.m; sourceTree = "<group>"; };
 		C6D94EE01748D264AF599820 /* Pods-RAC+MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC+MVVM.debug.xcconfig"; path = "Target Support Files/Pods-RAC+MVVM/Pods-RAC+MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +111,7 @@
 		07B03F3B29930A4900A4CAE0 /* RAC+MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C08FCCA729C4636E000892BD /* Base */,
 				07B03F3C29930A4900A4CAE0 /* AppDelegate.h */,
 				07B03F3D29930A4900A4CAE0 /* AppDelegate.m */,
 				07B03F3F29930A4900A4CAE0 /* SceneDelegate.h */,
@@ -78,7 +122,28 @@
 				07B03F4829930A4D00A4CAE0 /* Assets.xcassets */,
 				07B03F4A29930A4D00A4CAE0 /* LaunchScreen.storyboard */,
 				07B03F4D29930A4D00A4CAE0 /* Info.plist */,
+				C0BE8AED29D2938700E3C4E8 /* PrefixHeader.pch */,
 				07B03F4E29930A4D00A4CAE0 /* main.m */,
+				C0BE8AEF29D29AA400E3C4E8 /* NSString+Common.h */,
+				C0BE8AF029D29AA400E3C4E8 /* NSString+Common.m */,
+				C0852CCE29D1825B0093AF4A /* LoginViewModel.h */,
+				C0852CCF29D1825B0093AF4A /* LoginViewModel.m */,
+				C0BE8AF229D2BCFE00E3C4E8 /* LoginViewController.h */,
+				C0BE8AF329D2BCFE00E3C4E8 /* LoginViewController.m */,
+				C0BEBD6429DABD520004A99A /* LoginInputView.h */,
+				C0BEBD6529DABD520004A99A /* LoginInputView.m */,
+				C0BEBD6C29DFCA330004A99A /* ListViewController.h */,
+				C0BEBD6D29DFCA330004A99A /* ListViewController.m */,
+				C0BEBD6F29DFEBDE0004A99A /* ListHeaderView.h */,
+				C0BEBD7029DFEBDE0004A99A /* ListHeaderView.m */,
+				C0BEBD7529DFEE8F0004A99A /* ListTableCell.h */,
+				C0BEBD7629DFEE8F0004A99A /* ListTableCell.m */,
+				C0BEBD7229DFED470004A99A /* ListViewModel.h */,
+				C0BEBD7329DFED470004A99A /* ListViewModel.m */,
+				C0BEBD7829DFEF230004A99A /* ListHeaderViewModel.h */,
+				C0BEBD7929DFEF230004A99A /* ListHeaderViewModel.m */,
+				C0BEBD7B29DFF2240004A99A /* ListCellViewModel.h */,
+				C0BEBD7C29DFF2240004A99A /* ListCellViewModel.m */,
 			);
 			path = "RAC+MVVM";
 			sourceTree = "<group>";
@@ -98,6 +163,22 @@
 				7C3628F01B27938049BD4FEB /* Pods_RAC_MVVM.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C08FCCA729C4636E000892BD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C08FCCA829C463CB000892BD /* BaseViewController.h */,
+				C08FCCA929C463CB000892BD /* BaseViewController.m */,
+				C08FCCB229C4644C000892BD /* ViewControllerProtocol.h */,
+				C08FCCAE29C46401000892BD /* BaseViewModel.h */,
+				C08FCCAF29C46401000892BD /* BaseViewModel.m */,
+				C08FCCB329C4645F000892BD /* ViewModelProtocol.h */,
+				C08FCCAB29C463DF000892BD /* BaseView.h */,
+				C08FCCAC29C463DF000892BD /* BaseView.m */,
+				C08FCCB129C46432000892BD /* ViewProtocol.h */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,10 +294,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0852CD029D1825B0093AF4A /* LoginViewModel.m in Sources */,
+				C0BEBD7A29DFEF230004A99A /* ListHeaderViewModel.m in Sources */,
+				C0BEBD6629DABD520004A99A /* LoginInputView.m in Sources */,
 				07B03F4429930A4900A4CAE0 /* ViewController.m in Sources */,
+				C0BEBD7729DFEE8F0004A99A /* ListTableCell.m in Sources */,
+				C08FCCB029C46401000892BD /* BaseViewModel.m in Sources */,
+				C08FCCAA29C463CB000892BD /* BaseViewController.m in Sources */,
+				C0BE8AF429D2BCFE00E3C4E8 /* LoginViewController.m in Sources */,
+				C0BEBD7D29DFF2240004A99A /* ListCellViewModel.m in Sources */,
 				07B03F3E29930A4900A4CAE0 /* AppDelegate.m in Sources */,
 				07B03F4F29930A4D00A4CAE0 /* main.m in Sources */,
+				C0BEBD7129DFEBDE0004A99A /* ListHeaderView.m in Sources */,
 				07B03F4129930A4900A4CAE0 /* SceneDelegate.m in Sources */,
+				C0BEBD7429DFED470004A99A /* ListViewModel.m in Sources */,
+				C0BEBD6E29DFCA330004A99A /* ListViewController.m in Sources */,
+				C0BE8AF129D29AA400E3C4E8 /* NSString+Common.m in Sources */,
+				C08FCCAD29C463DF000892BD /* BaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +456,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92JP75ZK7N;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RAC+MVVM/PrefixHeader.pch";
 				INFOPLIST_FILE = "RAC+MVVM/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -382,6 +478,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92JP75ZK7N;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RAC+MVVM/PrefixHeader.pch";
 				INFOPLIST_FILE = "RAC+MVVM/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

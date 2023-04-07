@@ -43,6 +43,23 @@
     RAC(self.textField, textColor) = [validEmailSignal map:^id _Nullable(id  _Nullable value) {
         return [value boolValue] ? [UIColor greenColor] : [UIColor redColor];
     }];
+    
+    
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:@"1"];
+        [subscriber sendCompleted];
+        return [RACDisposable disposableWithBlock:^{
+            
+        }];
+    }];
+    [signal subscribeNext:^(id  _Nullable x) {
+            
+    }];
+    
+    
+    
+    
+    
 }
 
 - (void)commitAction:(UIButton *)sender {

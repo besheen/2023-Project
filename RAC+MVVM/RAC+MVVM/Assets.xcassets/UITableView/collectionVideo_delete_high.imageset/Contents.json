@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "collectionVideo_delete_high.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "collectionVideo_delete_high@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "collectionVideo_delete_high@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
