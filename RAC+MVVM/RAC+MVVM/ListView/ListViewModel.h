@@ -11,6 +11,11 @@
 @interface ListViewModel : BaseViewModel
 
 @property (nonatomic, strong) RACCommand *refreshCommand;
+@property (nonatomic, strong) RACCommand *loadMoreCommand;
+
+@property (nonatomic, strong) RACSubject *refreshUISubject;
+@property (nonatomic, strong) RACSubject *refreshEndSubject;
+
 @property (nonatomic, strong) RACSubject *cellSelectSubject;
 
 @property (nonatomic, strong) ListHeaderViewModel *headerViewModel;

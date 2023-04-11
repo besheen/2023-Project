@@ -12,7 +12,7 @@
 + (instancetype)allocWithZone:(struct _NSZone *)zone {
     BaseViewModel *viewModel = [super allocWithZone:zone];
     if (viewModel) {
-        [viewModel mInitialize];
+        [viewModel initialBind];
     }
     return viewModel;
 }
@@ -25,7 +25,7 @@
     return self;
 }
 
-- (void)mInitialize {
+- (void)initialBind {
     
 }
 @end

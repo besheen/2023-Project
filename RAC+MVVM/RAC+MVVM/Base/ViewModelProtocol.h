@@ -10,12 +10,13 @@
 
 typedef NS_ENUM(NSUInteger, LoadDataType) {
     LoadDataTypeError,
+    
 };
 
 @protocol ViewModelProtocol <NSObject>
 
 @optional
 - (instancetype)initWithModel:(id)model;
-/// 初始化
-- (void)mInitialize;
+/// 初始化绑定
+- (void)initialBind;
 @end
