@@ -36,27 +36,31 @@
         make.height.mas_equalTo(54);
     }];
     
-    RACSignal *validEmailSignal = [self.textField.rac_textSignal map:^id _Nullable(NSString * _Nullable value) {
-        return @([value rangeOfString:@"@"].location != NSNotFound);
-    }];
-    RAC(self.button, enabled) = validEmailSignal;
-    RAC(self.textField, textColor) = [validEmailSignal map:^id _Nullable(id  _Nullable value) {
-        return [value boolValue] ? [UIColor greenColor] : [UIColor redColor];
-    }];
+//    RACSignal *validEmailSignal = [self.textField.rac_textSignal map:^id _Nullable(NSString * _Nullable value) {
+//        return @([value rangeOfString:@"@"].location != NSNotFound);
+//    }];
+//    RAC(self.button, enabled) = validEmailSignal;
+//    RAC(self.textField, textColor) = [validEmailSignal map:^id _Nullable(id  _Nullable value) {
+//        return [value boolValue] ? [UIColor greenColor] : [UIColor redColor];
+//    }];
+//
+//
+//    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+//        [subscriber sendNext:@"1"];
+//        [subscriber sendCompleted];
+//        return [RACDisposable disposableWithBlock:^{
+//
+//        }];
+//    }];
+//    [signal subscribeNext:^(id  _Nullable x) {
+//
+//    }];
     
-    
-    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        [subscriber sendNext:@"1"];
-        [subscriber sendCompleted];
-        return [RACDisposable disposableWithBlock:^{
-            
-        }];
+    [[self.textField.rac_textSignal flattenMap:^__kindof RACSignal * _Nullable(NSString * _Nullable value) {
+        return [RACReturnSignal return:[NSString stringWithFormat:@"输出：%@", value]];
+    }] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
     }];
-    [signal subscribeNext:^(id  _Nullable x) {
-            
-    }];
-    
-    
     
     
     
